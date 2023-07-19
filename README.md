@@ -1,4 +1,4 @@
-# RansomwareCreator
+<h1 align="center">Ransomware Creator</h1>
 
 
 Ransomware creator by nakaril
