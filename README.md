@@ -1,7 +1,7 @@
 <h1 align="center">Ransomware Creator</h1>
 
 
-Ransomware creator by nakaril
+<h2 align="center">Ransomware creator by nakaril</h2>
 
 This type of ransomware will only encript files if you want one that encrypt folders also just say something in issues and i will upload so you can encrypt folders also
 
