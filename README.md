@@ -7,6 +7,12 @@ This type of ransomware will only encript files if you want one that encrypt fol
 
 for decryption you have to run decrypt.py and the password is iwant1
 
-if you want also to run this files in pcs without python use auto-py-to-exe so you can make your ransomware better
-
+if you want also to run this files in pcs without python use auto-py-to-exe so you can make your ransomware better, but you will have to change yourname.py to yourname.exe in the python file
 glhf!!
+
+"linux instalation"
+$ sudo apt update
+$ sudo apt install git
+$ git clone https://github.com/Nakaril/RansomwareCreator.git
+$ cd RansomwareCreator
+$ python creator.py
