@@ -3,6 +3,7 @@
 
 <div align="center">Ransomware creator by nakaril</div>
 
+Tomorrow or one of this days i will make custom decryption keys script just like the ransomware one
 
  This type of ransomware will only encript files, 
 if you want one that encrypt folders also just say something in issues and i will upload so you can encrypt folders also
