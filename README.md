@@ -9,7 +9,7 @@ if you want one that encrypt folders also just say something in issues and i wil
 
 for decryption you have to run decrypt.py and the password is iwant1
 
-if you want also to run this files in pcs without python use auto-py-to-exe so you can make your ransomware better, but you will have to change yourname.py to yourname.exe in the python file glhf!!
+if you want also to run this files in pcs without python use auto-py-to-exe so you can make your ransomware better, but you will have to change yourfilename.py to yourfilename.exe in the python file glhf!!
 
 ### Installing Via Linux <br>
 ```
