@@ -15,7 +15,7 @@ key = Fernet.generate_key()
 with open("thekey.key", "rb") as key:
 	secretkey = key.read()
 
-frasesecreta = "nak"
+frasesecreta = "iwant1"
 
 frase_usuario = input("Introduce la llave de desencryptacion: \n")
 
