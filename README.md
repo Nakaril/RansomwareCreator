@@ -14,6 +14,11 @@ $ git clone https://github.com/Nakaril/RansomwareCreator.git
 $ cd RansomwareCreator
 $ python creator.py
 ```
+### After creating ransomware
+```
+$ cd rade
+```
+
 if you want also to run this files in pcs without python use auto-py-to-exe so you can make your ransomware better, but you will have to change yourfilename.py to yourfilename.exe in the python file glhf!!
 <br><br> Like this:
 
